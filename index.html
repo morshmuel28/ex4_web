@@ -17,10 +17,10 @@
      const fields = ["image", "symbol", "name", "summary"]
      const row = (k, v, i) => {
         // complete tr string
-        return `<tr>
-            <td class="w-16 p-2 align-top border-b ${i===0 && ' border-t'} border-gray-200"><img class="h-full w-auto" src="${v['image']}" /></td>
-            ${fields.map((f) => cell(k, f, v)).join("")}
-            </tr>`
+        //return `<tr>
+            //<td class="w-16 p-2 align-top border-b ${i===0 && ' border-t'} border-gray-200"><img class="h-full w-auto" src="${v['image']}" /></td>
+            //</tr>`
+            return `<tr>${fields.map((f) => cell(k, f, v)).join("")}</tr>`
       }      
 
       const cell = (sym, prop, v) => {
